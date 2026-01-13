@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  /* Typography */
+  --heading-xl: 48px;
+  --heading-lg: 56px;
+  --heading-md: 36px;
+  --text-lg: 20px;
+  --text-md: 18px;
+
+  /* Spacing */
+  --section-padding: 120px;
+  --container-padding: 24px;
+  --grid-gap: 64px;
+  --card-padding: 32px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    /* Typography - reduced for mobile */
+    --heading-xl: 32px;
+    --heading-lg: 36px;
+    --heading-md: 28px;
+    --text-lg: 18px;
+    --text-md: 16px;
+
+    /* Spacing - reduced for mobile */
+    --section-padding: 60px;
+    --container-padding: 20px;
+    --grid-gap: 32px;
+    --card-padding: 24px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+/* Responsive grid utilities */
+.responsive-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--grid-gap);
+}
+
+.responsive-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.responsive-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .responsive-grid-2,
+  .responsive-grid-3,
+  .responsive-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .responsive-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile menu styles */
+.mobile-menu-hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-only {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none !important;
+  }
+}

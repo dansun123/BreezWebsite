@@ -208,6 +208,7 @@ export default function Home() {
                 fontSize: "var(--text-md)",
                 color: colors.secondary,
                 lineHeight: 1.8,
+                marginBottom: "24px",
               }}
             >
               We&apos;re backed by Y Combinator and Google Ventures. The team is
@@ -216,6 +217,95 @@ export default function Home() {
               obsessed with shipping pragmatic automation that finance teams
               will actually trust.
             </p>
+
+            {/* Backed by logos */}
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: "32px",
+                flexWrap: "wrap",
+              }}
+            >
+              {/* Y Combinator */}
+              <a
+                href="https://www.ycombinator.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  textDecoration: "none",
+                }}
+              >
+                <div
+                  style={{
+                    width: "32px",
+                    height: "32px",
+                    backgroundColor: "#FF6600",
+                    borderRadius: "4px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: colors.white,
+                    fontWeight: 700,
+                    fontSize: "18px",
+                  }}
+                >
+                  Y
+                </div>
+                <span
+                  style={{
+                    fontWeight: 600,
+                    color: colors.primary,
+                    fontSize: "15px",
+                  }}
+                >
+                  Y Combinator
+                </span>
+              </a>
+
+              {/* Google Ventures */}
+              <a
+                href="https://www.gv.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  textDecoration: "none",
+                }}
+              >
+                <div
+                  style={{
+                    width: "32px",
+                    height: "32px",
+                    backgroundColor: colors.primary,
+                    borderRadius: "4px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: colors.white,
+                    fontWeight: 700,
+                    fontSize: "14px",
+                  }}
+                >
+                  GV
+                </div>
+                <span
+                  style={{
+                    fontWeight: 600,
+                    color: colors.primary,
+                    fontSize: "15px",
+                  }}
+                >
+                  Google Ventures
+                </span>
+              </a>
+            </div>
           </section>
 
           {/* Trust Note */}

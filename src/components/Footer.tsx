@@ -52,14 +52,14 @@ export default function Footer() {
           }}
         >
           <a
-            href="mailto:daniel@breezlabs.com"
+            href="mailto:founders@breezlabs.com"
             style={{
               fontSize: "14px",
               color: colors.secondary,
               textDecoration: "none",
             }}
           >
-            daniel@breezlabs.com
+            founders@breezlabs.com
           </a>
         </div>
       </div>

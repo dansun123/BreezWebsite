@@ -665,32 +665,87 @@ export default function NowadaysCaseStudy() {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  gap: "48px",
+                  gap: "32px",
                   flexWrap: "wrap",
                 }}
               >
-                <Image
-                  src="/images/yc-logo.png"
-                  alt="Y Combinator"
-                  width={120}
-                  height={40}
+                {/* Y Combinator */}
+                <a
+                  href="https://www.ycombinator.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{
-                    height: "32px",
-                    width: "auto",
-                    opacity: 0.7,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    textDecoration: "none",
                   }}
-                />
-                <Image
-                  src="/images/gv-logo.png"
-                  alt="Google Ventures"
-                  width={120}
-                  height={40}
+                >
+                  <div
+                    style={{
+                      width: "32px",
+                      height: "32px",
+                      backgroundColor: "#FF6600",
+                      borderRadius: "4px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      color: colors.white,
+                      fontWeight: 700,
+                      fontSize: "18px",
+                    }}
+                  >
+                    Y
+                  </div>
+                  <span
+                    style={{
+                      fontWeight: 600,
+                      color: colors.primary,
+                      fontSize: "15px",
+                    }}
+                  >
+                    Y Combinator
+                  </span>
+                </a>
+
+                {/* Google Ventures */}
+                <a
+                  href="https://www.gv.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{
-                    height: "32px",
-                    width: "auto",
-                    opacity: 0.7,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    textDecoration: "none",
                   }}
-                />
+                >
+                  <div
+                    style={{
+                      width: "32px",
+                      height: "32px",
+                      backgroundColor: colors.primary,
+                      borderRadius: "4px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      color: colors.white,
+                      fontWeight: 700,
+                      fontSize: "14px",
+                    }}
+                  >
+                    GV
+                  </div>
+                  <span
+                    style={{
+                      fontWeight: 600,
+                      color: colors.primary,
+                      fontSize: "15px",
+                    }}
+                  >
+                    Google Ventures
+                  </span>
+                </a>
               </div>
             </div>
           </div>

@@ -1,14 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Mail,
-  CreditCard,
-  DollarSign,
-  Building2,
-  Settings,
-  CheckCircle,
-  ArrowRight,
-} from "lucide-react";
 import TrackedLink from "@/components/TrackedLink";
 import { theme } from "@/theme";
 
@@ -92,8 +83,8 @@ export default function NowadaysCaseStudy() {
               lineHeight: 1.2,
             }}
           >
-            How Nowadays reclaimed 50 hours a month with AI-powered
-            reconciliation
+            How Breez helps Nowadays collect missing payments from completed
+            events
           </h1>
           <p
             style={{
@@ -102,8 +93,9 @@ export default function NowadaysCaseStudy() {
               lineHeight: 1.6,
             }}
           >
-            How a finance team went from drowning in spreadsheets to focusing on
-            growth.
+            Reading event context to figure out what&apos;s owed, sending the
+            right invoices, and managing follow-ups—catching revenue that would
+            otherwise never be billed.
           </p>
         </div>
       </section>
@@ -143,7 +135,10 @@ export default function NowadaysCaseStudy() {
             <TrackedLink
               href="https://nowadays.ai"
               eventName="external_link_clicked"
-              eventProperties={{ company: "Nowadays", location: "case_study_page" }}
+              eventProperties={{
+                company: "Nowadays",
+                location: "case_study_page",
+              }}
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -180,14 +175,15 @@ export default function NowadaysCaseStudy() {
               marginBottom: "24px",
             }}
           >
-            The finance team was spending{" "}
-            <strong style={{ color: colors.primary }}>50 hours a month</strong>{" "}
-            on manual reconciliation—reading contracts for a 7% sourcing fee,
-            tracking commissions, and matching hundreds of invoices. Each event
-            required hours of tedious exporting, searching for documents,
-            calculating fees, and manual data entry. Spreadsheets were used to
-            track invoices and payments, but with hundreds per event, keeping up
-            with the status of each invoice and payment was very difficult.
+            After each event, Nowadays is owed money from multiple
+            sources—commissions from hotels, sourcing fees from clients, and
+            reimbursements for vendor payments made on behalf of customers. But
+            the hardest part wasn&apos;t following up on invoices—it was figuring
+            out that money was owed in the first place. Each event has different
+            contract terms, fee structures, and payment arrangements. Without
+            someone reading every contract and cross-referencing every
+            transaction, charges would go unbilled and revenue would quietly
+            disappear.
           </p>
 
           {/* The Solution */}
@@ -200,10 +196,8 @@ export default function NowadaysCaseStudy() {
               marginTop: "48px",
             }}
           >
-            The Solution
+            What Breez Does
           </h2>
-
-          {/* Paragraph 2: The New Way */}
           <p
             style={{
               fontSize: "var(--text-md)",
@@ -212,48 +206,52 @@ export default function NowadaysCaseStudy() {
               marginBottom: "24px",
             }}
           >
-            Breez Labs built a custom AI agent that changed everything. The
-            agent connects directly to{" "}
-            <strong style={{ color: colors.primary }}>
-              Brex, Stripe, vendor portals, and email
-            </strong>
-            —pulling in transactions, invoices, contracts, and travel documents
-            automatically. Nowadays provided workflow instructions and rules for
-            the agnet to follow. It reads and understands each document,
-            categorizes expenses, matches payments to invoices, and calculates
-            fees based on contract terms, all with an easily auditable trail.
+            Breez Labs now manages the accounts receivable process for
+            Nowadays&apos;s completed events. Here&apos;s how it works:
           </p>
 
-          {/* Paragraph 3: The Simple Workflow */}
-          <p
-            style={{
-              fontSize: "var(--text-md)",
-              color: colors.secondary,
-              lineHeight: 1.8,
-              marginBottom: "8px",
-            }}
-          >
-            <strong style={{ color: colors.primary }}>
-              Now, the Nowadays team&apos;s workflow is simple:
-            </strong>
-          </p>
           <ol
             style={{
               fontSize: "var(--text-md)",
               color: colors.secondary,
               lineHeight: 1.8,
-              marginBottom: "16px",
+              marginBottom: "24px",
               paddingLeft: "24px",
             }}
           >
-            <li style={{ marginBottom: "8px" }}>
-              Forward vendor emails to the agent
+            <li style={{ marginBottom: "12px" }}>
+              <strong style={{ color: colors.primary }}>
+                Monitor the shared inbox
+              </strong>{" "}
+              — We watch Nowadays&apos;s email for event completions,
+              contracts, payment confirmations, and customer correspondence to
+              build a full picture of what&apos;s happening.
             </li>
-            <li style={{ marginBottom: "8px" }}>
-              Review the auto-generated ledger entries
+            <li style={{ marginBottom: "12px" }}>
+              <strong style={{ color: colors.primary }}>
+                Figure out what&apos;s owed
+              </strong>{" "}
+              — We read contracts and event details to determine commissions,
+              sourcing fees, and reimbursements—then cross-reference against
+              what&apos;s actually been paid.
             </li>
-            <li>Approve with one click</li>
+            <li style={{ marginBottom: "12px" }}>
+              <strong style={{ color: colors.primary }}>
+                Send invoices and follow up
+              </strong>{" "}
+              — When we find a gap, we send the appropriate invoice to the
+              customer or hotel and manage the back-and-forth until
+              it&apos;s resolved.
+            </li>
+            <li style={{ marginBottom: "12px" }}>
+              <strong style={{ color: colors.primary }}>
+                Update the system of record
+              </strong>{" "}
+              — Once payment comes in, we reconcile it and update Nowadays&apos;s
+              books so everything stays in sync.
+            </li>
           </ol>
+
           <p
             style={{
               fontSize: "var(--text-md)",
@@ -262,239 +260,10 @@ export default function NowadaysCaseStudy() {
               marginBottom: "32px",
             }}
           >
-            No spreadsheets. No data entry. No chasing down missing receipts.
-            The agent handles the grunt work so the team can focus on growing
-            the business.
+            No more chasing payments. No more revenue left on the table. Breez
+            handles the entire AR loop so the Nowadays team can focus on
+            planning the next event.
           </p>
-
-          {/* How It Works Diagram */}
-          <div
-            style={{
-              backgroundColor: colors.primary,
-              borderRadius: "16px",
-              padding: "32px",
-              marginBottom: "32px",
-            }}
-          >
-            <p
-              style={{
-                fontSize: "14px",
-                fontWeight: 600,
-                color: `${colors.white}80`,
-                textTransform: "uppercase",
-                letterSpacing: "0.1em",
-                marginBottom: "24px",
-                textAlign: "center",
-              }}
-            >
-              How It Works
-            </p>
-
-            {/* Desktop layout */}
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                gap: "24px",
-                flexWrap: "wrap",
-              }}
-            >
-              {/* Inputs Column */}
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "12px",
-                  flex: "1",
-                  minWidth: "140px",
-                }}
-              >
-                <p
-                  style={{
-                    fontSize: "11px",
-                    fontWeight: 600,
-                    color: `${colors.white}60`,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.1em",
-                    marginBottom: "4px",
-                  }}
-                >
-                  Inputs
-                </p>
-                {[
-                  { icon: Mail, label: "Emails" },
-                  { icon: CreditCard, label: "Brex" },
-                  { icon: DollarSign, label: "Stripe" },
-                  { icon: Building2, label: "Vendor Portals" },
-                ].map((item) => (
-                  <div
-                    key={item.label}
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "10px",
-                      padding: "10px 14px",
-                      backgroundColor: `${colors.white}0D`,
-                      borderRadius: "8px",
-                      border: `1px solid ${colors.white}14`,
-                    }}
-                  >
-                    <item.icon
-                      size={18}
-                      color={`${colors.white}80`}
-                      strokeWidth={1.5}
-                    />
-                    <span
-                      style={{
-                        fontSize: "14px",
-                        fontWeight: 500,
-                        color: `${colors.white}E6`,
-                      }}
-                    >
-                      {item.label}
-                    </span>
-                  </div>
-                ))}
-              </div>
-
-              {/* Arrow */}
-              <ArrowRight
-                size={24}
-                color={colors.accent}
-                style={{ flexShrink: 0 }}
-              />
-
-              {/* Agent Center */}
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  gap: "12px",
-                  flex: "1",
-                  minWidth: "120px",
-                }}
-              >
-                <div
-                  style={{
-                    width: "80px",
-                    height: "80px",
-                    borderRadius: "50%",
-                    backgroundColor: `${colors.accent}26`,
-                    border: `2px solid ${colors.accent}99`,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <Settings size={32} color={colors.accent} strokeWidth={1.5} />
-                </div>
-                <div style={{ textAlign: "center" }}>
-                  <p
-                    style={{
-                      fontSize: "14px",
-                      fontWeight: 600,
-                      color: colors.white,
-                    }}
-                  >
-                    Breez Agent
-                  </p>
-                  <p
-                    style={{
-                      fontSize: "12px",
-                      color: `${colors.white}80`,
-                    }}
-                  >
-                    Reads & Matches
-                  </p>
-                </div>
-              </div>
-
-              {/* Arrow */}
-              <ArrowRight
-                size={24}
-                color={colors.accent}
-                style={{ flexShrink: 0 }}
-              />
-
-              {/* Outputs Column */}
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "12px",
-                  flex: "1",
-                  minWidth: "140px",
-                }}
-              >
-                <p
-                  style={{
-                    fontSize: "11px",
-                    fontWeight: 600,
-                    color: `${colors.white}60`,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.1em",
-                    marginBottom: "4px",
-                  }}
-                >
-                  Output
-                </p>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "10px",
-                    padding: "10px 14px",
-                    backgroundColor: `${colors.accent}1A`,
-                    borderRadius: "8px",
-                    border: `1px solid ${colors.accent}33`,
-                  }}
-                >
-                  <CheckCircle
-                    size={18}
-                    color={colors.accent}
-                    strokeWidth={1.5}
-                  />
-                  <span
-                    style={{
-                      fontSize: "14px",
-                      fontWeight: 500,
-                      color: `${colors.white}E6`,
-                    }}
-                  >
-                    Ledger Entries
-                  </span>
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "10px",
-                    padding: "10px 14px",
-                    backgroundColor: `${colors.accent}1A`,
-                    borderRadius: "8px",
-                    border: `1px solid ${colors.accent}33`,
-                  }}
-                >
-                  <CheckCircle
-                    size={18}
-                    color={colors.accent}
-                    strokeWidth={1.5}
-                  />
-                  <span
-                    style={{
-                      fontSize: "14px",
-                      fontWeight: 500,
-                      color: `${colors.white}E6`,
-                    }}
-                  >
-                    Ready to Approve
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
 
           {/* Callout */}
           <div
@@ -515,49 +284,12 @@ export default function NowadaysCaseStudy() {
               }}
             >
               <strong style={{ color: colors.accent }}>The first day:</strong>{" "}
-              Our AI caught a $7,000 missing charge that had been buried in the
+              We caught a $7,000 missing charge that had been buried in the
               noise—a flight credit that was never applied when a guest changed
-              their travel plans. The human team had missed it not because they
-              weren&apos;t capable, but because they were focused on
-              higher-leverage work. The AI, on the other hand, never gets bored
-              and never cuts corners—it checks every single line item with the
-              same attention to detail, every time.
+              their travel plans. The internal team had missed it not because
+              they weren&apos;t capable, but because they were focused on
+              higher-leverage work.
             </p>
-          </div>
-
-          {/* Report Screenshot */}
-          <h2
-            style={{
-              fontSize: "var(--heading-md)",
-              fontWeight: 700,
-              color: colors.primary,
-              marginBottom: "24px",
-            }}
-          >
-            Sample Report Output
-          </h2>
-          <div
-            style={{
-              backgroundColor: colors.white,
-              borderRadius: "16px",
-              padding: "8px",
-              boxShadow: "0 8px 32px rgba(0,0,0,0.12)",
-              border: `1px solid ${colors.secondary}20`,
-              marginBottom: "48px",
-            }}
-          >
-            <Image
-              src="/images/nowadays-report.png"
-              alt="Sector Reconciliation Report showing P&L Summary, Outstanding Balances, and Sector Summary for Nowadays"
-              width={800}
-              height={1000}
-              style={{
-                width: "100%",
-                height: "auto",
-                borderRadius: "12px",
-                display: "block",
-              }}
-            />
           </div>
 
           {/* Testimonial */}
@@ -615,7 +347,7 @@ export default function NowadaysCaseStudy() {
                 marginBottom: "16px",
               }}
             >
-              Ready to transform your operations?
+              Ready to stop chasing payments?
             </h3>
             <p
               style={{
@@ -624,12 +356,15 @@ export default function NowadaysCaseStudy() {
                 marginBottom: "24px",
               }}
             >
-              Let&apos;s discuss how AI agents can help your team.
+              Let&apos;s discuss how Breez can handle your accounts receivable.
             </p>
             <TrackedLink
               href="https://calendly.com/daniel-breezlabs/intro-call"
               eventName="cta_clicked"
-              eventProperties={{ cta_text: "Schedule a Call", location: "case_study_page" }}
+              eventProperties={{
+                cta_text: "Schedule a Call",
+                location: "case_study_page",
+              }}
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -678,7 +413,10 @@ export default function NowadaysCaseStudy() {
                 <TrackedLink
                   href="https://www.ycombinator.com"
                   eventName="investor_link_clicked"
-                  eventProperties={{ investor: "Y Combinator", location: "case_study_page" }}
+                  eventProperties={{
+                    investor: "Y Combinator",
+                    location: "case_study_page",
+                  }}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -719,7 +457,10 @@ export default function NowadaysCaseStudy() {
                 <TrackedLink
                   href="https://www.gv.com"
                   eventName="investor_link_clicked"
-                  eventProperties={{ investor: "Google Ventures", location: "case_study_page" }}
+                  eventProperties={{
+                    investor: "Google Ventures",
+                    location: "case_study_page",
+                  }}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{

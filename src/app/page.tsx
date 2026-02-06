@@ -9,9 +9,9 @@ import { theme } from "@/theme";
 const { colors } = theme;
 
 export const metadata: Metadata = {
-  title: "Breez Labs | AI-Native Finance Operations",
+  title: "Breez Labs | Accounts Receivable Outsourcing",
   description:
-    "Building the system of action layer on top of today's ERPs. AI agents that run accounting workflows with approvals, provenance, and audit trails.",
+    "Outsource your accounts receivable to Breez Labs. AI-powered AR management that reduces costs, accelerates collections, and frees your team. Backed by Y Combinator and Google Ventures.",
 };
 
 export default function Home() {
@@ -55,12 +55,14 @@ export default function Home() {
                 fontWeight: 500,
               }}
             >
-              An AI-native finance operations lab building the &ldquo;system of
-              action&rdquo; layer on top of today&apos;s ERPs and SORs.
+              Accounts receivable for services businesses where billing
+              isn&apos;t simple. We read your contracts and communications to
+              find money you&apos;re owed—then invoice, collect, and reconcile
+              it for you.
             </p>
           </header>
 
-          {/* Thesis */}
+          {/* Problem */}
           <section style={{ marginBottom: "48px" }}>
             <p
               style={{
@@ -70,23 +72,26 @@ export default function Home() {
                 marginBottom: "24px",
               }}
             >
-              Today, finance teams waste time and money acting as the
-              integration layer between the ERP and the rest of the
-              stack—manually entering data, reconciling inconsistencies, and
-              coordinating work across disconnected systems. Breez Labs builds
-              custom AI agents that can take over that coordination: interpret
-              unstructured documents, apply your policies, execute actions
-              across systems, and produce an audit trail your team—and your
-              auditors—can rely on.
+              If you run an agency, event company, consultancy, or any business
+              where what you&apos;re owed depends on contracts, variable fees,
+              and pass-through costs—you know the problem. Billing isn&apos;t as
+              simple as &ldquo;customer bought X, charge $Y.&rdquo; Revenue
+              comes from multiple sources per deal. Amounts depend on terms
+              buried in contracts. And without someone cross-referencing every
+              transaction, charges go unbilled and money quietly disappears.
+              Traditional AR teams can&apos;t help—they start after the invoice
+              exists. Breez starts before. We understand your business
+              context and surface what you&apos;re owed, then handle invoicing,
+              follow-ups, disputes, and reconciliation end-to-end.
             </p>
           </section>
 
-          {/* How it works visual */}
+          {/* Value Props */}
           <section style={{ marginBottom: "48px" }}>
             <IntegrationGraphic />
           </section>
 
-          {/* Approach */}
+          {/* How We Work */}
           <section style={{ marginBottom: "48px" }}>
             <h2
               style={{
@@ -96,7 +101,7 @@ export default function Home() {
                 marginBottom: "16px",
               }}
             >
-              Our approach
+              How we work
             </h2>
             <p
               style={{
@@ -106,12 +111,13 @@ export default function Home() {
                 marginBottom: "24px",
               }}
             >
-              Breez Labs is not trying to rip out your ERP. We&apos;re starting
-              by deeply understanding specific Controller workflows—where close
-              and AP actually go manual—and then shipping targeted automations
-              that plug into the existing stack. Our strategy is simple: learn
-              the workflow, automate the loop, measure the results, and expand
-              outward.
+              We plug into your existing systems—your inbox, ERP, and payment
+              platforms—and take ownership of the AR workflow end-to-end. Our
+              team uses AI tooling to understand your contracts and
+              communications, identify when money is owed, generate and send the
+              right invoices, and manage customer follow-ups until you&apos;re
+              paid. Every action is tracked and every payment is reconciled back
+              to your system of record.
             </p>
 
             <p
@@ -121,12 +127,11 @@ export default function Home() {
                 lineHeight: 1.8,
               }}
             >
-              We are currently running a small number of paid pilots with
-              controllers and accounting ops leaders where we automate one
-              painful workflow end-to-end (with approvals, guardrails, and
-              evidence by default). If you own close/AP/reconciliation pain and
-              want a 1-page automation map of your workflow&apos;s bottlenecks
-              and quick wins, we&apos;d love to talk.
+              Getting started is simple—we plug into the tools you already use
+              and start handling AR within days, not months. No system
+              migrations, no long onboarding. If you&apos;re leaving money on
+              the table and want to see what outsourcing AR looks like, we&apos;d
+              love to talk.
             </p>
           </section>
 
@@ -168,7 +173,7 @@ export default function Home() {
                 marginBottom: "8px",
               }}
             >
-              How we helped Nowadays save 96% of reconciliation time →
+              How we help Nowadays collect missing payments automatically →
             </TrackedLink>
             <p
               style={{
@@ -177,9 +182,9 @@ export default function Home() {
                 lineHeight: 1.6,
               }}
             >
-              Automated bank and credit card reconciliation for an event
-              planning company, reducing monthly effort from 50 hours to 2
-              hours.
+              We read event context to figure out what&apos;s owed, generate
+              and send the right invoices, and manage follow-ups—catching
+              revenue that would otherwise never be billed.
             </p>
           </section>
 
@@ -203,11 +208,11 @@ export default function Home() {
                 marginBottom: "24px",
               }}
             >
-              We&apos;re backed by Y Combinator and Google Ventures. The team is
-              led by technical founders (MIT) with a track record building and
-              shipping complex systems. We take a long-term view—but we&apos;re
-              obsessed with shipping pragmatic automation that finance teams
-              will actually trust.
+              We&apos;re backed by Y Combinator and Google Ventures. Our team
+              combines deep technical expertise (MIT) with AI-powered tooling to
+              deliver AR results that traditional BPOs can&apos;t match—faster
+              follow-ups, fewer errors, and full visibility into every dollar
+              owed.
             </p>
 
             {/* Backed by logos */}
@@ -323,10 +328,9 @@ export default function Home() {
                 fontStyle: "italic",
               }}
             >
-              &ldquo;If you think AI should not be trusted to fully run the
-              books—we agree with you. That&apos;s exactly why we&apos;re
-              building approvals, provenance, and rollback into the
-              foundation.&rdquo;
+              &ldquo;Your customers are our customers. We handle collections
+              professionally and respectfully—protecting your relationships while
+              making sure you get paid.&rdquo;
             </p>
           </section>
 

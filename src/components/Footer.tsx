@@ -41,7 +41,7 @@ export default function Footer() {
               color: colors.secondary,
             }}
           >
-            AI-native finance operations
+            Accounts receivable, handled.
           </p>
         </div>
 
